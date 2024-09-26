@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Неделя Китая</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -12,8 +12,8 @@
   <header class="main-header">
     <nav class="main-header__navigation navigation">
       <a class="navigation__logo logo" href="index.html">
-        <img class="logo__image" src="#" alt="Логотип" width="100" height="100">
-        <img class="logo__text" src="#" alt="Текст логотипа" width="100" height="100">
+        <img class="logo__image" src="images/logo-mobile.svg" alt="Логотип" width="50" height="50">
+        <img class="logo__text" src="images/logo-mobile-text.svg" alt="Текст логотипа" width="139" height="40">
       </a>
       <div class="navigation__buttons-container">
         <button class="navigation__language-button navigation__language-button--current button" type="button">РУС</button>
@@ -31,6 +31,10 @@
         <li class="navigation__item">Контакты</li>
       </ul>
     </nav>
+    <picture>
+      <source type="image/svg+xml" media="(min-width: 1920px)" srcset="images/logo.svg" width="523" height="400">
+      <img class="main-header__main-logo" src="images/logo.svg" alt="Логотип Недели Китая" width="280" height="214" loading="lazy">
+    </picture>
     <h1 class="visually-hidden">Неделя Китая</h1>
     <div class="main-header__placetime">
       <time class="main-header__time" datetime="2024-10-14">14–19 октября 2024 года</time>
@@ -39,29 +43,47 @@
         дом 11, строение 1
       </address>
     </div>
-    <img class="main-header__international-logo" src="#" alt="Российский дом международного технического сотрудничества" width="100" height="100">
+    <picture>
+      <source type="image/svg+xml" srcset="images/rd-logo.svg" media="(min-width: 1920px)" width="417" height="75">
+      <img class="main-header__international-logo" src="images/rd-logo.svg" alt="Российский дом международного технического сотрудничества" width="280" height="50" loading="lazy">
+    </picture>
     <button class="main-header__rergistration-button button" type="button">РЕГИСТРАЦИЯ</button>
     <section class="main-header__supports supports">
       <h2 class="supports__title">При поддержке</h2>
       <ul class="supports__list">
         <li class="supports__item support">
-          <img class="support__logo" src="#" alt="Логотип организации" width="100" height="100">
+          <picture>
+            <source type="image/svg+xml" srcset="images/support-logo1.svg" media="(min-width: 1920px)" width="55" height="60">
+            <img class="support__logo" src="images/support-logo1.svg" alt="Логотип организации" width="48" height="54" loading="lazy">
+          </picture>
           Администрация Президента Российской Федерации
         </li>
         <li class="supports__item support">
-          <img class="support__logo" src="#" alt="Логотип организации" width="100" height="100">
+          <picture>
+            <source type="image/svg+xml" srcset="images/support-logo2.svg" media="(min-width: 1920px)" width="55" height="60">
+            <img class="support__logo" src="images/support-logo2.svg" alt="Логотип организации" width="49" height="55" loading="lazy">
+          </picture>
           Министерство науки и Высшего образования Российской Федерации
         </li>
         <li class="supports__item support">
-          <img class="support__logo" src="#" alt="Логотип организации" width="100" height="100">
+          <picture>
+            <source type="image/svg+xml" srcset="images/support-logo3.svg" media="(min-width: 1920px)" width="55" height="60">
+            <img class="support__logo" src="images/support-logo3.svg" alt="Логотип организации" width="51" height="60" loading="lazy">
+          </picture>
           Министерство Иностранных Российской Федерации
         </li>
         <li class="supports__item support">
-          <img class="support__logo" src="#" alt="Логотип организации" width="100" height="100">
+          <picture>
+            <source type="image/svg+xml" srcset="images/support-logo4.svg" media="(min-width: 1920px)" width="60" height="60">
+            <img class="support__logo" src="images/support-logo4.svg" alt="Логотип организации" width="55" height="55" loading="lazy">
+          </picture>
           Посольство Китайской Народной Республики
         </li>
         <li class="supports__item support">
-          <img class="support__logo" src="#" alt="Логотип организации" width="100" height="100">
+          <picture>
+            <source type="image/svg+xml" srcset="images/support-logo4.svg" media="(min-width: 1920px)" width="60" height="60">
+            <img class="support__logo" src="images/support-logo4.svg" alt="Логотип организации" width="52" height="50" loading="lazy">
+          </picture>
           Министерство образования Китайской Народной республики
         </li>
       </ul>
@@ -82,15 +104,30 @@
       </p>
       <ul class="about__list">
         <li class="about__item direction-card">
-          <img class="direction-card__logo" src="#" alt="Изображение бизнеса" width="100" height="100">
+          <picture>
+            <source type="image/webp" srcset="images/direction-1@1x.webp, images/direction-1@2x.webp 2x" media="(min-width: 1920px)" width="415" height="261">
+            <source type="image/webp" srcset="images/direction-1-mobile@1x.webp, images/direction-1-mobile@2x.webp 2x" width="280" height="176">
+            <source type="image/png" media="(min-width: 1920px)" srcset="images/direction-1@1x.png, images/direction-1@2x.png 2x" width="415" height="261">
+            <img class="direction-card__logo" src="images/direction-1-mobile@1x.png" srcset="images/direction-1-mobile@2x.png 2x" alt="Изображение бизнеса" width="280" height="176" loading="lazy">
+          </picture>
           <p class="direction-card__text">Бизнес</p>
         </li>
         <li class="about__item direction-card">
-          <img class="direction-card__logo" src="#" alt="Изображение технологических исследований" width="100" height="100">
+          <picture>
+            <source type="image/webp" srcset="images/direction-2@1x.webp, images/direction-2@2x.webp 2x" media="(min-width: 1920px)" width="415" height="261">
+            <source type="image/webp" srcset="images/direction-2-mobile@1x.webp, images/direction-2-mobile@2x.webp 2x" width="280" height="176">
+            <source type="image/png" media="(min-width: 1920px)" srcset="images/direction-2@1x.png, images/direction-2@2x.png 2x" width="415" height="261">
+            <img class="direction-card__logo" src="images/direction-2-mobile@1x.png" srcset="images/direction-2-mobile@2x.png 2x" alt="Изображение бизнеса" width="280" height="176" loading="lazy">
+          </picture>
           <p class="direction-card__text">Научно-техническое</p>
         </li>
         <li class="about__item direction-card">
-          <img class="direction-card__logo" src="#" alt="Изображение культуры" width="100" height="100">
+          <picture>
+            <source type="image/webp" srcset="images/direction-3@1x.webp, images/direction-3@2x.webp 2x" media="(min-width: 1920px)" width="415" height="261">
+            <source type="image/webp" srcset="images/direction-3-mobile@1x.webp, images/direction-3-mobile@2x.webp 2x" width="280" height="176">
+            <source type="image/png" media="(min-width: 1920px)" srcset="images/direction-3@1x.png, images/direction-3@2x.png 2x" width="415" height="261">
+            <img class="direction-card__logo" src="images/direction-3-mobile@1x.png" srcset="images/direction-3-mobile@2x.png 2x" alt="Изображение бизнеса" width="280" height="176" loading="lazy">
+          </picture>
           <p class="direction-card__text">Культурное</p>
         </li>
       </ul>
@@ -250,52 +287,102 @@
       <ul class="speakers__list">
         <li class="speakers__item speaker-card">
           <h3 class="speaker-card__title">Андрей Быстрицкий</h3>
-          <img class="speaker-card__image" src="#" alt="Фото Андрея Быстрицкого" width="100" height="100">
+          <picture>
+            <source type="image/webp" srcset="images/speaker-pc@1x.webp, images/speaker-pc@2x.webp 2x" media="(min-width: 1920px)" width="170" height="200">
+            <source type="image/webp" srcset="images/speaker@1x.webp, images/speaker@2x.webp 2x" width="177" height="208">
+            <source type="image/jpg" media="(min-width: 1920px)" srcset="images/speaker-pc@1x.png, images/speaker-pc@2x.png 2x" width="170" height="200">
+            <img class="speaker-card__image" src="images/speaker@1x.jpg" srcset="images/speaker@2x.jpg 2x" alt="Фото Андрея Быстрицкого" width="177" height="208">
+          </picture>
           <p class="speaker-card__text">Председатель совета, Фонд развития и поддержки Международного дискуссионного клуба «Валдай»</p>
         </li>
         <li class="speakers__item speaker-card">
           <h3 class="speaker-card__title">Андрей Быстрицкий</h3>
-          <img class="speaker-card__image" src="#" alt="Фото Андрея Быстрицкого" width="100" height="100">
+          <picture>
+            <source type="image/webp" srcset="images/speaker-pc@1x.webp, images/speaker-pc@2x.webp 2x" media="(min-width: 1920px)" width="170" height="200">
+            <source type="image/webp" srcset="images/speaker@1x.webp, images/speaker@2x.webp 2x" width="177" height="208">
+            <source type="image/jpg" media="(min-width: 1920px)" srcset="images/speaker-pc@1x.png, images/speaker-pc@2x.png 2x" width="170" height="200">
+            <img class="speaker-card__image" src="images/speaker@1x.jpg" srcset="images/speaker@2x.jpg 2x" alt="Фото Андрея Быстрицкого" width="177" height="208">
+          </picture>
           <p class="speaker-card__text">Председатель совета, Фонд развития и поддержки Международного дискуссионного клуба «Валдай»</p>
         </li>
         <li class="speakers__item speaker-card">
           <h3 class="speaker-card__title">Андрей Быстрицкий</h3>
-          <img class="speaker-card__image" src="#" alt="Фото Андрея Быстрицкого" width="100" height="100">
+          <picture>
+            <source type="image/webp" srcset="images/speaker-pc@1x.webp, images/speaker-pc@2x.webp 2x" media="(min-width: 1920px)" width="170" height="200">
+            <source type="image/webp" srcset="images/speaker@1x.webp, images/speaker@2x.webp 2x" width="177" height="208">
+            <source type="image/jpg" media="(min-width: 1920px)" srcset="images/speaker-pc@1x.png, images/speaker-pc@2x.png 2x" width="170" height="200">
+            <img class="speaker-card__image" src="images/speaker@1x.jpg" srcset="images/speaker@2x.jpg 2x" alt="Фото Андрея Быстрицкого" width="177" height="208">
+          </picture>
           <p class="speaker-card__text">Председатель совета, Фонд развития и поддержки Международного дискуссионного клуба «Валдай»</p>
         </li>
         <li class="speakers__item speaker-card">
           <h3 class="speaker-card__title">Андрей Быстрицкий</h3>
-          <img class="speaker-card__image" src="#" alt="Фото Андрея Быстрицкого" width="100" height="100">
+          <picture>
+            <source type="image/webp" srcset="images/speaker-pc@1x.webp, images/speaker-pc@2x.webp 2x" media="(min-width: 1920px)" width="170" height="200">
+            <source type="image/webp" srcset="images/speaker@1x.webp, images/speaker@2x.webp 2x" width="177" height="208">
+            <source type="image/jpg" media="(min-width: 1920px)" srcset="images/speaker-pc@1x.png, images/speaker-pc@2x.png 2x" width="170" height="200">
+            <img class="speaker-card__image" src="images/speaker@1x.jpg" srcset="images/speaker@2x.jpg 2x" alt="Фото Андрея Быстрицкого" width="177" height="208">
+          </picture>
           <p class="speaker-card__text">Председатель совета, Фонд развития и поддержки Международного дискуссионного клуба «Валдай»</p>
         </li>
         <li class="speakers__item speaker-card">
           <h3 class="speaker-card__title">Андрей Быстрицкий</h3>
-          <img class="speaker-card__image" src="#" alt="Фото Андрея Быстрицкого" width="100" height="100">
+          <picture>
+            <source type="image/webp" srcset="images/speaker-pc@1x.webp, images/speaker-pc@2x.webp 2x" media="(min-width: 1920px)" width="170" height="200">
+            <source type="image/webp" srcset="images/speaker@1x.webp, images/speaker@2x.webp 2x" width="177" height="208">
+            <source type="image/jpg" media="(min-width: 1920px)" srcset="images/speaker-pc@1x.png, images/speaker-pc@2x.png 2x" width="170" height="200">
+            <img class="speaker-card__image" src="images/speaker@1x.jpg" srcset="images/speaker@2x.jpg 2x" alt="Фото Андрея Быстрицкого" width="177" height="208">
+          </picture>
           <p class="speaker-card__text">Председатель совета, Фонд развития и поддержки Международного дискуссионного клуба «Валдай»</p>
         </li>
         <li class="speakers__item speaker-card">
           <h3 class="speaker-card__title">Андрей Быстрицкий</h3>
-          <img class="speaker-card__image" src="#" alt="Фото Андрея Быстрицкого" width="100" height="100">
+          <picture>
+            <source type="image/webp" srcset="images/speaker-pc@1x.webp, images/speaker-pc@2x.webp 2x" media="(min-width: 1920px)" width="170" height="200">
+            <source type="image/webp" srcset="images/speaker@1x.webp, images/speaker@2x.webp 2x" width="177" height="208">
+            <source type="image/jpg" media="(min-width: 1920px)" srcset="images/speaker-pc@1x.png, images/speaker-pc@2x.png 2x" width="170" height="200">
+            <img class="speaker-card__image" src="images/speaker@1x.jpg" srcset="images/speaker@2x.jpg 2x" alt="Фото Андрея Быстрицкого" width="177" height="208">
+          </picture>
           <p class="speaker-card__text">Председатель совета, Фонд развития и поддержки Международного дискуссионного клуба «Валдай»</p>
         </li>
         <li class="speakers__item speaker-card">
           <h3 class="speaker-card__title">Андрей Быстрицкий</h3>
-          <img class="speaker-card__image" src="#" alt="Фото Андрея Быстрицкого" width="100" height="100">
+          <picture>
+            <source type="image/webp" srcset="images/speaker-pc@1x.webp, images/speaker-pc@2x.webp 2x" media="(min-width: 1920px)" width="170" height="200">
+            <source type="image/webp" srcset="images/speaker@1x.webp, images/speaker@2x.webp 2x" width="177" height="208">
+            <source type="image/jpg" media="(min-width: 1920px)" srcset="images/speaker-pc@1x.png, images/speaker-pc@2x.png 2x" width="170" height="200">
+            <img class="speaker-card__image" src="images/speaker@1x.jpg" srcset="images/speaker@2x.jpg 2x" alt="Фото Андрея Быстрицкого" width="177" height="208">
+          </picture>
           <p class="speaker-card__text">Председатель совета, Фонд развития и поддержки Международного дискуссионного клуба «Валдай»</p>
         </li>
         <li class="speakers__item speaker-card">
           <h3 class="speaker-card__title">Андрей Быстрицкий</h3>
-          <img class="speaker-card__image" src="#" alt="Фото Андрея Быстрицкого" width="100" height="100">
+          <picture>
+            <source type="image/webp" srcset="images/speaker-pc@1x.webp, images/speaker-pc@2x.webp 2x" media="(min-width: 1920px)" width="170" height="200">
+            <source type="image/webp" srcset="images/speaker@1x.webp, images/speaker@2x.webp 2x" width="177" height="208">
+            <source type="image/jpg" media="(min-width: 1920px)" srcset="images/speaker-pc@1x.png, images/speaker-pc@2x.png 2x" width="170" height="200">
+            <img class="speaker-card__image" src="images/speaker@1x.jpg" srcset="images/speaker@2x.jpg 2x" alt="Фото Андрея Быстрицкого" width="177" height="208">
+          </picture>
           <p class="speaker-card__text">Председатель совета, Фонд развития и поддержки Международного дискуссионного клуба «Валдай»</p>
         </li>
         <li class="speakers__item speaker-card">
           <h3 class="speaker-card__title">Андрей Быстрицкий</h3>
-          <img class="speaker-card__image" src="#" alt="Фото Андрея Быстрицкого" width="100" height="100">
+          <picture>
+            <source type="image/webp" srcset="images/speaker-pc@1x.webp, images/speaker-pc@2x.webp 2x" media="(min-width: 1920px)" width="170" height="200">
+            <source type="image/webp" srcset="images/speaker@1x.webp, images/speaker@2x.webp 2x" width="177" height="208">
+            <source type="image/jpg" media="(min-width: 1920px)" srcset="images/speaker-pc@1x.png, images/speaker-pc@2x.png 2x" width="170" height="200">
+            <img class="speaker-card__image" src="images/speaker@1x.jpg" srcset="images/speaker@2x.jpg 2x" alt="Фото Андрея Быстрицкого" width="177" height="208">
+          </picture>
           <p class="speaker-card__text">Председатель совета, Фонд развития и поддержки Международного дискуссионного клуба «Валдай»</p>
         </li>
         <li class="speakers__item speaker-card">
           <h3 class="speaker-card__title">Андрей Быстрицкий</h3>
-          <img class="speaker-card__image" src="#" alt="Фото Андрея Быстрицкого" width="100" height="100">
+          <picture>
+            <source type="image/webp" srcset="images/speaker-pc@1x.webp, images/speaker-pc@2x.webp 2x" media="(min-width: 1920px)" width="170" height="200">
+            <source type="image/webp" srcset="images/speaker@1x.webp, images/speaker@2x.webp 2x" width="177" height="208">
+            <source type="image/jpg" media="(min-width: 1920px)" srcset="images/speaker-pc@1x.png, images/speaker-pc@2x.png 2x" width="170" height="200">
+            <img class="speaker-card__image" src="images/speaker@1x.jpg" srcset="images/speaker@2x.jpg 2x" alt="Фото Андрея Быстрицкого" width="177" height="208">
+          </picture>
           <p class="speaker-card__text">Председатель совета, Фонд развития и поддержки Международного дискуссионного клуба «Валдай»</p>
         </li>
       </ul>
@@ -399,17 +486,32 @@
       <ul class="multimedia__list">
         <li class="multimedia__item">
           <a class="multimedia__video-link" href="#">
-            <img class="multimedia__image" src="#" alt="Мультимедиа" width="100" height="100">
+            <picture>
+              <source type="image/webp" srcset="images/multimedia-1@1x.webp, images/multimedia-1@2x.webp 2x" media="(min-width: 1920px)" width="306" height="204">
+              <source type="image/webp" srcset="images/multimedia-1@1x.webp, images/multimedia-1@2x.webp 2x" width="130" height="90">
+              <source type="image/jpg" media="(min-width: 1920px)" srcset="images/multimedia-1@1x.jpg, images/multimedia-1@2x.jpg 2x" width="306" height="204">
+              <img class="multimedia__image" src="images/multimedia-1@1x.jpg" srcset="images/multimedia-1@2x.jpg 2x" alt="Мультимедиа" width="130" height="90">
+            </picture>
           </a>
         </li>
         <li class="multimedia__item">
           <a class="multimedia__video-link" href="#">
-            <img class="multimedia__image" src="#" alt="Мультимедиа" width="100" height="100">
+            <picture>
+              <source type="image/webp" srcset="images/multimedia-2@1x.webp, images/multimedia-2@2x.webp 2x" media="(min-width: 1920px)" width="306" height="204">
+              <source type="image/webp" srcset="images/multimedia-2@1x.webp, images/multimedia-2@2x.webp 2x" width="130" height="90">
+              <source type="image/jpg" media="(min-width: 1920px)" srcset="images/multimedia-2@1x.jpg, images/multimedia-2@2x.jpg 2x" width="306" height="204">
+              <img class="multimedia__image" src="images/multimedia-2@1x.jpg" srcset="images/multimedia-2@2x.jpg 2x" alt="Мультимедиа" width="130" height="90">
+            </picture>
           </a>
         </li>
         <li class="multimedia__item">
           <a class="multimedia__video-link" href="#">
-            <img class="multimedia__image" src="#" alt="Мультимедиа" width="100" height="100">
+            <picture>
+              <source type="image/webp" srcset="images/multimedia-3@1x.webp, images/multimedia-3@2x.webp 2x" media="(min-width: 1920px)" width="306" height="204">
+              <source type="image/webp" srcset="images/multimedia-3@1x.webp, images/multimedia-3@2x.webp 2x" width="130" height="90">
+              <source type="image/jpg" media="(min-width: 1920px)" srcset="images/multimedia-3@1x.jpg, images/multimedia-3@2x.jpg 2x" width="306" height="204">
+              <img class="multimedia__image" src="images/multimedia-3@1x.jpg" srcset="images/multimedia-3@2x.jpg 2x" alt="Мультимедиа" width="130" height="90">
+            </picture>
           </a>
         </li>
         <li class="multimedia__item">
@@ -429,17 +531,32 @@
       <ul class="multimedia__list">
         <li class="multimedia__item">
           <a class="multimedia__video-link" href="#">
-            <img class="multimedia__image" src="#" alt="Мультимедиа" width="100" height="100">
+            <picture>
+              <source type="image/webp" srcset="images/multimedia-1@1x.webp, images/multimedia-1@2x.webp 2x" media="(min-width: 1920px)" width="306" height="204">
+              <source type="image/webp" srcset="images/multimedia-1@1x.webp, images/multimedia-1@2x.webp 2x" width="130" height="90">
+              <source type="image/jpg" media="(min-width: 1920px)" srcset="images/multimedia-1@1x.jpg, images/multimedia-1@2x.jpg 2x" width="306" height="204">
+              <img class="multimedia__image" src="images/multimedia-1@1x.jpg" srcset="images/multimedia-1@2x.jpg 2x" alt="Мультимедиа" width="130" height="90">
+            </picture>
           </a>
         </li>
         <li class="multimedia__item">
           <a class="multimedia__video-link" href="#">
-            <img class="multimedia__image" src="#" alt="Мультимедиа" width="100" height="100">
+            <picture>
+              <source type="image/webp" srcset="images/multimedia-2@1x.webp, images/multimedia-2@2x.webp 2x" media="(min-width: 1920px)" width="306" height="204">
+              <source type="image/webp" srcset="images/multimedia-2@1x.webp, images/multimedia-2@2x.webp 2x" width="130" height="90">
+              <source type="image/jpg" media="(min-width: 1920px)" srcset="images/multimedia-2@1x.jpg, images/multimedia-2@2x.jpg 2x" width="306" height="204">
+              <img class="multimedia__image" src="images/multimedia-2@1x.jpg" srcset="images/multimedia-2@2x.jpg 2x" alt="Мультимедиа" width="130" height="90">
+            </picture>
           </a>
         </li>
         <li class="multimedia__item">
           <a class="multimedia__video-link" href="#">
-            <img class="multimedia__image" src="#" alt="Мультимедиа" width="100" height="100">
+            <picture>
+              <source type="image/webp" srcset="images/multimedia-3@1x.webp, images/multimedia-3@2x.webp 2x" media="(min-width: 1920px)" width="306" height="204">
+              <source type="image/webp" srcset="images/multimedia-3@1x.webp, images/multimedia-3@2x.webp 2x" width="130" height="90">
+              <source type="image/jpg" media="(min-width: 1920px)" srcset="images/multimedia-3@1x.jpg, images/multimedia-3@2x.jpg 2x" width="306" height="204">
+              <img class="multimedia__image" src="images/multimedia-3@1x.jpg" srcset="images/multimedia-3@2x.jpg 2x" alt="Мультимедиа" width="130" height="90">
+            </picture>
           </a>
         </li>
         <li class="multimedia__item">
@@ -459,17 +576,32 @@
       <ul class="multimedia__list">
         <li class="multimedia__item">
           <a class="multimedia__video-link" href="#">
-            <img class="multimedia__image" src="#" alt="Мультимедиа" width="100" height="100">
+            <picture>
+              <source type="image/webp" srcset="images/multimedia-1@1x.webp, images/multimedia-1@2x.webp 2x" media="(min-width: 1920px)" width="306" height="204">
+              <source type="image/webp" srcset="images/multimedia-1@1x.webp, images/multimedia-1@2x.webp 2x" width="130" height="90">
+              <source type="image/jpg" media="(min-width: 1920px)" srcset="images/multimedia-1@1x.jpg, images/multimedia-1@2x.jpg 2x" width="306" height="204">
+              <img class="multimedia__image" src="images/multimedia-1@1x.jpg" srcset="images/multimedia-1@2x.jpg 2x" alt="Мультимедиа" width="130" height="90">
+            </picture>
           </a>
         </li>
         <li class="multimedia__item">
           <a class="multimedia__video-link" href="#">
-            <img class="multimedia__image" src="#" alt="Мультимедиа" width="100" height="100">
+            <picture>
+              <source type="image/webp" srcset="images/multimedia-2@1x.webp, images/multimedia-2@2x.webp 2x" media="(min-width: 1920px)" width="306" height="204">
+              <source type="image/webp" srcset="images/multimedia-2@1x.webp, images/multimedia-2@2x.webp 2x" width="130" height="90">
+              <source type="image/jpg" media="(min-width: 1920px)" srcset="images/multimedia-2@1x.jpg, images/multimedia-2@2x.jpg 2x" width="306" height="204">
+              <img class="multimedia__image" src="images/multimedia-2@1x.jpg" srcset="images/multimedia-2@2x.jpg 2x" alt="Мультимедиа" width="130" height="90">
+            </picture>
           </a>
         </li>
         <li class="multimedia__item">
           <a class="multimedia__video-link" href="#">
-            <img class="multimedia__image" src="#" alt="Мультимедиа" width="100" height="100">
+            <picture>
+              <source type="image/webp" srcset="images/multimedia-3@1x.webp, images/multimedia-3@2x.webp 2x" media="(min-width: 1920px)" width="306" height="204">
+              <source type="image/webp" srcset="images/multimedia-3@1x.webp, images/multimedia-3@2x.webp 2x" width="130" height="90">
+              <source type="image/jpg" media="(min-width: 1920px)" srcset="images/multimedia-3@1x.jpg, images/multimedia-3@2x.jpg 2x" width="306" height="204">
+              <img class="multimedia__image" src="images/multimedia-3@1x.jpg" srcset="images/multimedia-3@2x.jpg 2x" alt="Мультимедиа" width="130" height="90">
+            </picture>
           </a>
         </li>
         <li class="multimedia__item">
@@ -496,21 +628,36 @@
         <li class="publications__item publication">
           <a class="publication__link" href="#">
             <time class="publication__date" datetime="2024-01-10">10.01.2024</time>
-            <img class="publication__image" src="#" alt="Фото публикации" width="100" height="100">
+            <picture>
+              <source type="image/webp" srcset="images/multimedia-1@1x.webp, images/multimedia-1@2x.webp 2x" media="(min-width: 1920px)" width="306" height="204">
+              <source type="image/webp" srcset="images/multimedia-1@1x.webp, images/multimedia-1@2x.webp 2x" width="130" height="90">
+              <source type="image/jpg" media="(min-width: 1920px)" srcset="images/multimedia-1@1x.jpg, images/multimedia-1@2x.jpg 2x" width="306" height="204">
+              <img class="publication__image" src="images/multimedia-1@1x.jpg" srcset="images/multimedia-1@2x.jpg 2x" alt="Фото публикации" width="130" height="90">
+            </picture>
             <p class="publication__text">Сотрудничество РЦНИ и Китая: итоги и перспективы</p>
           </a>
         </li>
         <li class="publications__item publication">
           <a class="publication__link" href="#">
             <time class="publication__date" datetime="2024-01-10">10.01.2024</time>
-            <img class="publication__image" src="#" alt="Фото публикации" width="100" height="100">
+            <picture>
+              <source type="image/webp" srcset="images/multimedia-2@1x.webp, images/multimedia-2@2x.webp 2x" media="(min-width: 1920px)" width="306" height="204">
+              <source type="image/webp" srcset="images/multimedia-2@1x.webp, images/multimedia-2@2x.webp 2x" width="130" height="90">
+              <source type="image/jpg" media="(min-width: 1920px)" srcset="images/multimedia-2@1x.jpg, images/multimedia-2@2x.jpg 2x" width="306" height="204">
+              <img class="publication__image" src="images/multimedia-2@1x.jpg" srcset="images/multimedia-2@2x.jpg 2x" alt="Фото публикации" width="130" height="90">
+            </picture>
             <p class="publication__text">Сотрудничество РЦНИ и Китая: итоги и перспективы</p>
           </a>
         </li>
         <li class="publications__item publication">
           <a class="publication__link" href="#">
             <time class="publication__date" datetime="2024-01-10">10.01.2024</time>
-            <img class="publication__image" src="#" alt="Фото публикации" width="100" height="100">
+            <picture>
+              <source type="image/webp" srcset="images/multimedia-3@1x.webp, images/multimedia-3@2x.webp 2x" media="(min-width: 1920px)" width="306" height="204">
+              <source type="image/webp" srcset="images/multimedia-3@1x.webp, images/multimedia-3@2x.webp 2x" width="130" height="90">
+              <source type="image/jpg" media="(min-width: 1920px)" srcset="images/multimedia-3@1x.jpg, images/multimedia-3@2x.jpg 2x" width="306" height="204">
+              <img class="publication__image" src="images/multimedia-3@1x.jpg" srcset="images/multimedia-3@2x.jpg 2x" alt="Фото публикации" width="130" height="90">
+            </picture>
             <p class="publication__text">Сотрудничество РЦНИ и Китая: итоги и перспективы</p>
           </a>
         </li>
@@ -521,31 +668,76 @@
       <h2 class="banners__title">Баннеры</h2>
       <ul class="banners__list">
         <li class="banners__item">
-          <img class="banners__image" src="#" alt="Баннер" width="100" height="100">
+          <picture>
+            <source type="image/webp" srcset="images/direction-2@1x.webp, images/direction-2@2x.webp 2x" media="(min-width: 1920px)" width="636" height="359">
+            <source type="image/webp" srcset="images/direction-2-mobile@1x.webp, images/direction-2-mobile@2x.webp 2x" width="280" height="158">
+            <source type="image/png" media="(min-width: 1920px)" srcset="images/direction-2@1x.png, images/direction-2@2x.png 2x" width="636" height="359">
+            <img class="banners__image" src="images/banner@1x.png" srcset="images/direction-2-mobile@2x.png 2x" alt="Баннер" width="280" height="158" loading="lazy">
+          </picture>
         </li>
         <li class="banners__item">
-          <img class="banners__image" src="#" alt="Баннер" width="100" height="100">
+          <picture>
+            <source type="image/webp" srcset="images/direction-2@1x.webp, images/direction-2@2x.webp 2x" media="(min-width: 1920px)" width="636" height="359">
+            <source type="image/webp" srcset="images/direction-2-mobile@1x.webp, images/direction-2-mobile@2x.webp 2x" width="130" height="73">
+            <source type="image/png" media="(min-width: 1920px)" srcset="images/direction-2@1x.png, images/direction-2@2x.png 2x" width="636" height="359">
+            <img class="banners__image" src="images/banner@1x.png" srcset="images/direction-2-mobile@2x.png 2x" alt="Баннер" width="130" height="73" loading="lazy">
+          </picture>
         </li>
         <li class="banners__item">
-          <img class="banners__image" src="#" alt="Баннер" width="100" height="100">
+          <picture>
+            <source type="image/webp" srcset="images/direction-2@1x.webp, images/direction-2@2x.webp 2x" media="(min-width: 1920px)" width="415" height="234">
+            <source type="image/webp" srcset="images/direction-2-mobile@1x.webp, images/direction-2-mobile@2x.webp 2x" width="130" height="73">
+            <source type="image/png" media="(min-width: 1920px)" srcset="images/direction-2@1x.png, images/direction-2@2x.png 2x" width="415" height="234">
+            <img class="banners__image" src="images/banner@1x.png" srcset="images/direction-2-mobile@2x.png 2x" alt="Баннер" width="130" height="73" loading="lazy">
+          </picture>
         </li>
         <li class="banners__item">
-          <img class="banners__image" src="#" alt="Баннер" width="100" height="100">
+          <picture>
+            <source type="image/webp" srcset="images/direction-2@1x.webp, images/direction-2@2x.webp 2x" media="(min-width: 1920px)" width="415" height="234">
+            <source type="image/webp" srcset="images/direction-2-mobile@1x.webp, images/direction-2-mobile@2x.webp 2x" width="280" height="158">
+            <source type="image/png" media="(min-width: 1920px)" srcset="images/direction-2@1x.png, images/direction-2@2x.png 2x" width="415" height="234">
+            <img class="banners__image" src="images/banner@1x.png" srcset="images/direction-2-mobile@2x.png 2x" alt="Баннер" width="280" height="158" loading="lazy">
+          </picture>
         </li>
         <li class="banners__item">
-          <img class="banners__image" src="#" alt="Баннер" width="100" height="100">
+          <picture>
+            <source type="image/webp" srcset="images/direction-2@1x.webp, images/direction-2@2x.webp 2x" media="(min-width: 1920px)" width="415" height="234">
+            <source type="image/webp" srcset="images/direction-2-mobile@1x.webp, images/direction-2-mobile@2x.webp 2x" width="130" height="73">
+            <source type="image/png" media="(min-width: 1920px)" srcset="images/direction-2@1x.png, images/direction-2@2x.png 2x" width="415" height="234">
+            <img class="banners__image" src="images/banner@1x.png" srcset="images/direction-2-mobile@2x.png 2x" alt="Баннер" width="130" height="73" loading="lazy">
+          </picture>
         </li>
         <li class="banners__item">
-          <img class="banners__image" src="#" alt="Баннер" width="100" height="100">
+          <picture>
+            <source type="image/webp" srcset="images/direction-2@1x.webp, images/direction-2@2x.webp 2x" media="(min-width: 1920px)" width="305" height="172">
+            <source type="image/webp" srcset="images/direction-2-mobile@1x.webp, images/direction-2-mobile@2x.webp 2x" width="130" height="73">
+            <source type="image/png" media="(min-width: 1920px)" srcset="images/direction-2@1x.png, images/direction-2@2x.png 2x" width="305" height="172">
+            <img class="banners__image" src="images/banner@1x.png" srcset="images/direction-2-mobile@2x.png 2x" alt="Баннер" width="130" height="73" loading="lazy">
+          </picture>
         </li>
         <li class="banners__item">
-          <img class="banners__image" src="#" alt="Баннер" width="100" height="100">
+          <picture>
+            <source type="image/webp" srcset="images/direction-2@1x.webp, images/direction-2@2x.webp 2x" media="(min-width: 1920px)" width="305" height="172">
+            <source type="image/webp" srcset="images/direction-2-mobile@1x.webp, images/direction-2-mobile@2x.webp 2x" width="280" height="158">
+            <source type="image/png" media="(min-width: 1920px)" srcset="images/direction-2@1x.png, images/direction-2@2x.png 2x" width="305" height="172">
+            <img class="banners__image" src="images/banner@1x.png" srcset="images/direction-2-mobile@2x.png 2x" alt="Баннер" width="280" height="158" loading="lazy">
+          </picture>
         </li>
         <li class="banners__item">
-          <img class="banners__image" src="#" alt="Баннер" width="100" height="100">
+          <picture>
+            <source type="image/webp" srcset="images/direction-2@1x.webp, images/direction-2@2x.webp 2x" media="(min-width: 1920px)" width="305" height="172">
+            <source type="image/webp" srcset="images/direction-2-mobile@1x.webp, images/direction-2-mobile@2x.webp 2x" width="130" height="73">
+            <source type="image/png" media="(min-width: 1920px)" srcset="images/direction-2@1x.png, images/direction-2@2x.png 2x" width="305" height="172">
+            <img class="banners__image" src="images/banner@1x.png" srcset="images/direction-2-mobile@2x.png 2x" alt="Баннер" width="130" height="73" loading="lazy">
+          </picture>
         </li>
         <li class="banners__item">
-          <img class="banners__image" src="#" alt="Баннер" width="100" height="100">
+          <picture>
+            <source type="image/webp" srcset="images/direction-2@1x.webp, images/direction-2@2x.webp 2x" media="(min-width: 1920px)" width="305" height="172">
+            <source type="image/webp" srcset="images/direction-2-mobile@1x.webp, images/direction-2-mobile@2x.webp 2x" width="130" height="73">
+            <source type="image/png" media="(min-width: 1920px)" srcset="images/direction-2@1x.png, images/direction-2@2x.png 2x" width="305" height="172">
+            <img class="banners__image" src="images/banner@1x.png" srcset="images/direction-2-mobile@2x.png 2x" alt="Баннер" width="130" height="73" loading="lazy">
+          </picture>
         </li>
       </ul>
     </section>
@@ -554,23 +746,35 @@
       <ul class="partners__list">
         <li class="partners__item partner">
           <h3 class="partner__title">Партнер</h3>
-          <img class="partner__image" src="#" alt="Логотип партнера" width="100" height="100">
-          <img class="partner__image" src="#" alt="Логотип партнера" width="100" height="100">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1920px)" srcset="images/rd-logo.svg" width="280" height="50">
+            <img class="partner__image" src="images/rd-logo.svg" alt="Логотип Партнера" width="130" height="23" loading="lazy">
+          </picture>
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1920px)" srcset="images/partner-2.svg" width="280" height="47">
+            <img class="partner__image" src="images/partner-2.svg" alt="Логотип Партнера" width="130" height="22" loading="lazy">
+          </picture>
         </li>
         <li class="partners__item partner">
           <h3 class="partner__title">Официальный партнер</h3>
-          <img class="partner__image" src="#" alt="Логотип партнера" width="100" height="100">
-          <img class="partner__image" src="#" alt="Логотип партнера" width="100" height="100">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1920px)" srcset="images/official-partner-1.svg" width="177" height="60">
+            <img class="partner__image" src="images/official-partner-1.svg" alt="Логотип Партнера" width="129" height="44" loading="lazy">
+          </picture>
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1920px)" srcset="images/official-partner-2.svg" width="187" height="70">
+            <img class="partner__image" src="images/official-partner-2.svg" alt="Логотип Партнера" width="135" height="51" loading="lazy">
+          </picture>
         </li>
         <li class="partners__item partner">
           <h3 class="partner__title">Генеральный партнер</h3>
-          <img class="partner__image" src="#" alt="Логотип партнера" width="100" height="100">
-          <img class="partner__image" src="#" alt="Логотип партнера" width="100" height="100">
+          <img class="partner__image" src="images/rd-logo.svg" alt="Логотип Партнера" width="280" height="50" loading="lazy">
+          <img class="partner__image" src="images/partner-2.svg" alt="Логотип Партнера" width="280" height="47" loading="lazy">
         </li>
         <li class="partners__item partner">
           <h3 class="partner__title">Стратегический партнер</h3>
-          <img class="partner__image" src="#" alt="Логотип партнера" width="100" height="100">
-          <img class="partner__image" src="#" alt="Логотип партнера" width="100" height="100">
+          <img class="partner__image" src="images/official-partner-1.svg" alt="Логотип Партнера" width="177" height="60" loading="lazy">
+          <img class="partner__image" src="images/official-partner-2.svg" alt="Логотип Партнера" width="187" height="70" loading="lazy">
         </li>
       </ul>
       <a class="partners__link" href="#">Стать партнером</a>
@@ -582,31 +786,59 @@
         <ul class="organizers__list">
           <li class="organizers__item">
             <p class="organizers__text">Организаторы:</p>
-            <img class="organizers__image" src="#" alt="Логотип организатора" width="100" height="100">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1920px)" srcset="images/rd-logo.svg" width="302" height="54">
+              <img class="organizers__image" src="images/official-partner-1.svg" alt="Логотип Организатора" width="129" height="44" loading="lazy">
+            </picture>
+            <img class="organizers__image" src="images/official-partner-2.svg" alt="Логотип Организатора" width="135" height="51" loading="lazy">
           </li>
           <li class="organizers__item">
             <p class="organizers__text">Соорганизатор
               научного направления:</p>
-            <img class="organizers__image" src="#" alt="Логотип организатора" width="100" height="100">
-            <img class="organizers__image" src="#" alt="Логотип организатора" width="100" height="100">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1920px)" srcset="images/official-partner-1.svg" width="177" height="60">
+              <img class="organizers__image" src="images/official-partner-1.svg" alt="Логотип Организатора" width="129" height="44" loading="lazy">
+            </picture>
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1920px)" srcset="images/co-organizer-science-russia-2.svg" width="76" height="76">
+              <img class="organizers__image" src="images/official-partner-2.svg" alt="Логотип Организатора" width="135" height="51" loading="lazy">
+            </picture>
           </li>
           <li class="organizers__item">
             <p class="organizers__text">Соорганизатор образовательного направления:</p>
-            <img class="organizers__image" src="#" alt="Логотип организатора" width="100" height="100">
-            <img class="organizers__image" src="#" alt="Логотип организатора" width="100" height="100">
-            <img class="organizers__image" src="#" alt="Логотип организатора" width="100" height="100">
-            <img class="organizers__image" src="#" alt="Логотип организатора" width="100" height="100">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1920px)" srcset="images/co-organizer-learn-russia-1.svg" width="149" height="50">
+              <img class="organizers__image" src="images/official-partner-1.svg" alt="Логотип Организатора" width="129" height="44" loading="lazy">
+            </picture>
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1920px)" srcset="images/co-organizer-learn-russia-2.svg" width="157" height="50">
+              <img class="organizers__image" src="images/official-partner-2.svg" alt="Логотип Организатора" width="135" height="51" loading="lazy">
+            </picture>
+            <img class="organizers__image" src="images/co-organizer-learn-russia-3.svg" alt="Логотип Организатора" width="172" height="50" loading="lazy">
+            <img class="organizers__image" src="images/co-organizer-learn-russia-4.svg" alt="Логотип Организатора" width="274" height="36" loading="lazy">
           </li>
           <li class="organizers__item">
             <p class="organizers__text">Соорганизатор
               научно-технического направления:</p>
-            <img class="organizers__image" src="#" alt="Логотип организатора" width="100" height="100">
-            <img class="organizers__image" src="#" alt="Логотип организатора" width="100" height="100">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1920px)" srcset="images/co-organizer-technic-russia-1.svg" width="77" height="82">
+              <img class="organizers__image" src="images/official-partner-1.svg" alt="Логотип Организатора" width="129" height="44" loading="lazy">
+            </picture>
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1920px)" srcset="images/official-partner-2.svg" width="187" height="70">
+              <img class="organizers__image" src="images/official-partner-2.svg" alt="Логотип Организатора" width="135" height="51" loading="lazy">
+            </picture>
           </li>
           <li class="organizers__item">
             <p class="organizers__text">Соорганизатор культурного направления:</p>
-            <img class="organizers__image" src="#" alt="Логотип организатора" width="100" height="100">
-            <img class="organizers__image" src="#" alt="Логотип организатора" width="100" height="100">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1920px)" srcset="images/co-organizer-culture-russia-1.svg" width="124" height="50">
+              <img class="organizers__image" src="images/official-partner-1.svg" alt="Логотип Организатора" width="129" height="44" loading="lazy">
+            </picture>
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1920px)" srcset="images/co-organizer-culture-russia-2.svg" width="100" height="100">
+              <img class="organizers__image" src="images/official-partner-2.svg" alt="Логотип Организатора" width="135" height="51" loading="lazy">
+            </picture>
           </li>
         </ul>
       </div>
@@ -615,26 +847,48 @@
         <ul class="organizers__list">
           <li class="organizers__item">
             <p class="organizers__text">Организаторы:</p>
-            <img class="organizers__image" src="#" alt="Логотип организатора" width="100" height="100">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1920px)" srcset="images/partner-2.svg" width="177" height="60">
+              <img class="organizers__image" src="images/official-partner-1.svg" alt="Логотип Организатора" width="307" height="51" loading="lazy">
+            </picture>
+            <img class="organizers__image" src="images/official-partner-2.svg" alt="Логотип Организатора" width="135" height="51" loading="lazy">
           </li>
           <li class="organizers__item">
             <p class="organizers__text">Соорганизатор
               научного направления:</p>
-            <img class="organizers__image" src="#" alt="Логотип организатора" width="100" height="100">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1920px)" srcset="images/co-organizer-science-china.svg" width="318" height="80">
+              <img class="organizers__image" src="images/official-partner-1.svg" alt="Логотип Организатора" width="129" height="44" loading="lazy">
+            </picture>
+            <img class="organizers__image" src="images/official-partner-2.svg" alt="Логотип Организатора" width="135" height="51" loading="lazy">
           </li>
           <li class="organizers__item">
             <p class="organizers__text">Соорганизатор образовательного направления:</p>
-            <img class="organizers__image" src="#" alt="Логотип организатора" width="100" height="100">
-            <img class="organizers__image" src="#" alt="Логотип организатора" width="100" height="100">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1920px)" srcset="images/co-organizer-learn-china-1.svg" width="361" height="68">
+              <img class="organizers__image" src="images/official-partner-1.svg" alt="Логотип Организатора" width="129" height="44" loading="lazy">
+            </picture>
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1920px)" srcset="images/co-organizer-learn-china-2.svg" width="217" height="53">
+              <img class="organizers__image" src="images/official-partner-2.svg" alt="Логотип Организатора" width="135" height="51" loading="lazy">
+            </picture>
           </li>
           <li class="organizers__item">
             <p class="organizers__text">Соорганизатор
               научно-технического направления:</p>
-            <img class="organizers__image" src="#" alt="Логотип организатора" width="100" height="100">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1920px)" srcset="images/co-organizer-technic-china-1.svg" width="255" height="60">
+              <img class="organizers__image" src="images/official-partner-1.svg" alt="Логотип Организатора" width="129" height="44" loading="lazy">
+            </picture>
+            <img class="organizers__image" src="images/official-partner-2.svg" alt="Логотип Организатора" width="135" height="51" loading="lazy">
           </li>
           <li class="organizers__item">
             <p class="organizers__text">Соорганизатор культурного направления:</p>
-            <img class="organizers__image" src="#" alt="Логотип организатора" width="100" height="100">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1920px)" srcset="images/co-organizer-culture-china-1.svg" width="149" height="64">
+              <img class="organizers__image" src="images/official-partner-1.svg" alt="Логотип Организатора" width="129" height="44" loading="lazy">
+            </picture>
+            <img class="organizers__image" src="images/official-partner-2.svg" alt="Логотип Организатора" width="135" height="51" loading="lazy">
           </li>
         </ul>
       </div>
@@ -671,7 +925,10 @@
   </main>
   <footer class="main-footer">
     <h2 class="main-footer__title">Контакты</h2>
-    <img class="main-footer__logo" src="#" alt="Логотип недели Китая" width="100" height="100">
+    <picture>
+      <source type="image/svg+xml" media="(min-width: 1920px)" srcset="images/logo.svg" width="392" height="300">
+      <img class="main-footer__logo" src="images/logo.svg" alt="Логотип недели Китая" width="280" height="214" loading="lazy">
+    </picture>
     <div class="main-footer__placetime">
       <time class="main-footer__time" datetime="2024-10-14">14–19 октября 2024 года</time>
       <address class="main-footer__address">
@@ -679,7 +936,10 @@
         дом 11, строение 1
       </address>
     </div>
-    <img class="main-footer__international-logo" src="#" alt="Российский дом международного технического сотрудничества" width="100" height="100">
+    <picture>
+      <source type="image/svg+xml" media="(min-width: 1920px)" srcset="images/rd-logo.svg" width="416" height="75">
+      <img class="main-footer__international-logo" src="images/rd-logo.svg" alt="Российский дом международного технического сотрудничества" width="280" height="50" loading="lazy">
+    </picture>
     <dl class="main-footer__list contacts">
       <div class="contacts__item">
         <dt class="contacts__name">Адрес:</dt>
@@ -712,7 +972,7 @@
     <button class="main-footer__rergistration-button button" type="button">РЕГИСТРАЦИЯ</button>
     <p class="main-footer__text">© 2024 Российский дом международного научно-технического сотрудничества (РД МНТС)</p>
     <a class="main-footer__author-link author-link" href="https://recreator.ru">
-      <img class="author-link__logo" src="#" alt="Логотип recreator.ru" width="100" height="100">
+      <img class="author-link__logo" src="images/recreator-logo.svg" alt="Логотип recreator.ru" width="32" height="40">
       Разработка сайта recreator.ru
     </a>
     <button class="main-footer__scroll-up" type="button">Наверх</button>
